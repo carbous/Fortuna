@@ -887,6 +887,7 @@
 	desc = "The assault rifle variant of the R84, based off the pre-war FN FNC. Issued to high-ranking troopers and specialized units. Chambered in 5.56."
 	icon_state = "R82"
 	item_state = "R84"
+	extra_damage = 4
 	fire_delay = 2.5
 	can_suppress = TRUE
 	suppressor_state = "rifle_suppressor"
@@ -1046,10 +1047,13 @@
 	item_state = "assault_carbine"
 	slot_flags = 0
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	fire_delay = 3.5
-	burst_shot_delay = 2.5
+	fire_delay = 3.25
+	burst_shot_delay = 3
 	spread = 9
-	recoil = 0.1
+	slowdown = 0.3
+	recoil = 0.08
+	extra_damage = -2
+	extra_penetration = -0.1
 	can_attachments = TRUE
 	can_scope = TRUE
 	scope_state = "scope_short"
